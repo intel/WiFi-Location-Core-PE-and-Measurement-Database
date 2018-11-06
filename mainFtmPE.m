@@ -12,9 +12,6 @@
 
 function mainFtmPE(sessionFolder)
 
-mkdir('../FtmPE')
-addpath(genpath('../FtmPE'),'-end')
-
 if  exist('sessionFolder','var')
     cfg = testFtmPeConfig(sessionFolder);
 else
