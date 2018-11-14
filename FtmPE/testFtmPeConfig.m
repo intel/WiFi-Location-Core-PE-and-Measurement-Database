@@ -17,7 +17,7 @@ cfg.measFile              = [cfg.name,'.csv'];
 cfg.rPosFile              = [cfg.name,'_RSP_LIST.csv'];
 cfg.VenueFile             = [cfg.name,'_VenueFile.mat'];
 %*************************************************************************
-cfg.UseSyntheticMeas      = 1; % 1 = Use synthetic measurements
+cfg.UseSyntheticMeas      = 0; % 1 = Use synthetic measurements
                                % 0 = Use real measured data
 if cfg.UseSyntheticMeas
     cfg.measFile = [cfg.name,'_noisySynthRanges.csv'];

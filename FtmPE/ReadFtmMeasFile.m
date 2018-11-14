@@ -14,9 +14,9 @@
 function [measTableOut,refPosMat,rPos,VenueParams] = ReadFtmMeasFile(cfg)
 
 
-measTable    = load(fullfile('data\',cfg.sessionFolder,cfg.measFile));
-rPos         = load(fullfile('data\',cfg.sessionFolder,cfg.rPosFile));
-VenueParams  = load(fullfile('data\',cfg.sessionFolder,cfg.VenueFile));
+measTable    = load(fullfile(pwd,'\data\',cfg.sessionFolder,cfg.measFile));
+rPos         = load(fullfile(pwd,'\data\',cfg.sessionFolder,cfg.rPosFile));
+VenueParams  = load(fullfile(pwd,'\data\',cfg.sessionFolder,cfg.VenueFile));
 
 Nrsp = length(rPos(:,1));
 % remove RSPs ---------------------------------------------------

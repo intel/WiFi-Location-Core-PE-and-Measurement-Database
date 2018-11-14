@@ -12,9 +12,6 @@
 
 function mainFtmPE(sessionFolder)
 
-mkdir('matlab/FtmPE')
-addpath(genpath('matlab/FtmPE'),'-end')
-
 if  exist('sessionFolder','var')
     cfg = testFtmPeConfig(sessionFolder);
 else
